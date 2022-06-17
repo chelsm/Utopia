@@ -10,10 +10,8 @@ const PageTwo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  *{
-    transition: 2s;
-  }
   .stars{
+    transition: 2s;
     height: 150px;
     position: absolute;
     top: 5%;
@@ -26,52 +24,57 @@ const PageTwo = styled.div`
     position: absolute;
     bottom: 5%;
     left: 5%;
+    transition: 2s;
     height:60px
   }
   .curve_line{
     position: absolute;
     top: 10%;
+    transition: 2s;
     width: 100%
   }
   .flower{
     z-index: 1;
     position: absolute;
     top: 25%;
+    transition: 2s;
     right: 8%
   }
   .big_cercle{
     z-index: 0;
     position: absolute;
     top: 30%;
+    transition: 2s;
     right: 5%
   }
   .small_cercle{
     z-index: 0;
     height: 87px;
+    transition: 2s;
     position: absolute;
     top: 38%;
     right: 30%
   }
-  .state {
+  .containerInfo{
     width: 90%;
+    position: absolute;
+    top: 60%;
+    width: 90%
+  }
+  .state {
     text-align:center;
     letter-spacing: 10px;
     color: #fff;
     text-transform: uppercase;
-    position: absolute;
     margin: 0;
     font-size: 4rem;
     font-family: Utopia;
-    top: 60%;
   }
   .aboutUs {
-    width: 90%;
     font-family: RobotoReg;
     color: #fff;
-    position: absolute;
     margin: 0;
     font-size: 20px;
-    top: 70%;
     text-align: center;
   }
   span {
@@ -81,11 +84,13 @@ const PageTwo = styled.div`
   @media (max-width: 640px) {
     .state{
       top: 58%;
+    transition: 2s;
 
       font-size:2rem;
     }
     .aboutUs{
-      top: 65%;
+    transition: 2s;
+    top: 65%;
       font-size:18px;
       span{
       font-size:18px;
@@ -143,13 +148,15 @@ export default function LandingTwo() {
         <img className='big_cercle' alt="logo" src="img/cercle_icon.svg"/>
         <img className='small_cercle' alt="logo" src="img/cercle_icon.svg"/>
 
-        <h1 className='state'>
-          En construction
-        </h1>
-        <p  className='aboutUs'>
-          Utopia est une agence digitale qui vous propose <br/> 
-          <span> des solutions digitales innovantes </span>
-        </p>
+        <div className='containerInfo'>
+          <h1 className='state'>
+            En construction
+          </h1>
+          <p  className='aboutUs'>
+            Utopia est une agence digitale qui vous propose <br/> 
+            <span> des solutions digitales innovantes </span>
+          </p>
+        </div>
            
         </PageTwo>
   )

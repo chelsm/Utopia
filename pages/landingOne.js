@@ -7,16 +7,15 @@ const PageOne = styled.div`
   order: 1;
   position: relative;
   height: 100%;
-  *{
-    transition: 2s;
-  }
   .stars{
     height: 150px;
     position: absolute;
     top: 5%;
+    transition: 2s;
     left: 5%;
   }
   .waves{
+    transition: 2s;
     position: absolute;
     bottom: 5%;
     left: 5%;
@@ -42,8 +41,10 @@ const PageOne = styled.div`
   @media (max-width: 640px) {
     .agenceName{
       font-size: 6rem;
+      transition: 2s;
     }
     .borderDoor{
+    transition: 2s;
       height: 340px;
     }
     .stars{
