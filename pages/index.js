@@ -1,6 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Landing from './landing'
+import Landing from './under_construction';
 
 export default function Home() {
   return (
